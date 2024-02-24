@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f0eef1;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 160px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.logo{
+    /* margin: 20px; */
+    font-size: 20px;
+    color: #000;
+}
+
+nav button{
+    padding: 10px 20px ;
+    /* margin: 20px; */
+    font-size: 18px;
+    border: none;
+    background-color: #a324a3;
+    color: white;
+    border-radius: 6px;
+}
+nav button:hover{
+    background-color: #862886;
+}
+
+.add{
+    margin: 38px auto;
+    padding: 12px 24px;
+    font-size: 28px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    display: block;
+}
+.add:hover{
+    background-color: #cfcfcf;
+}
+
+.container{
+    margin: 30px 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.addedbooks{
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.books{
+    width: 280px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgba(43, 43, 43, 0.35) 0px 5px 10px;
+    font-size: 26px;
+}
+
+.books p{
+    margin: 10px 0px;
+}
+
+.books button{
+    margin: 6px 0px;
+    width: 100%;
+}
+
+.books button{
+    padding: 10px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+}
+
+.yes:hover{
+    background-color: #6be167;
+}
+.yes{
+    background-color: #9fff9c;
+}
+#remove:hover{
+    background-color: #cfcfcf;
+}
+
+dialog{
+    position: absolute;
+    width: 400px;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+dialog::backdrop{
+    background-color: #47474761;
+}
+dialog input[type='text']{
+    margin: 10px 0px;
+    font-size: 22px;
+    width: 100%;
+    padding: 8px 20px;
+    border: none;
+    background-color: #f0eef1;
+}
+dialog span{
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 6px;
+}
+input[type="checkbox"] {
+    /* Hide the default checkbox */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px; /* Width of the checkbox */
+    height: 20px; /* Height of the checkbox */
+    border: 2px solid #999; /* Border color and width */
+    border-radius: 4px; /* Border radius to create rounded corners */
+    background-color: #fff; /* Background color */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Define custom appearance for checked state */
+input[type="checkbox"]:checked {
+    background-color: #66bb6a; /* Background color when checked */
+    border-color: #66bb6a; /* Border color when checked */
+}
+
+/* Style the checkmark */
+input[type="checkbox"]::before {
+    content: "\2713"; /* Unicode character for checkmark */
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 20px; /* Adjust line height to vertically center checkmark */
+    color: #fff; /* Color of the checkmark */
+    font-size: 16px; /* Size of the checkmark */
+    opacity: 0; /* Initially hidden */
+}
+
+/* Show the checkmark when checkbox is checked */
+input[type="checkbox"]:checked::before {
+    opacity: 1; /* Show the checkmark */
+}
+
+dialog button{
+    width: 100%;
+    margin: 10px 0px;
+}
+dialog #read{
+    background-color: #9fff9c;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+}
+
+dialog #read:hover{
+    background-color: #ff9c9c;
+}
+.closemodal{
+    background-color: #000000;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+

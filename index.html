@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reading List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">myBooks</div>
+        <button class="login">LOGIN</button>
+    </nav>
+    <button class="add" onclick="addbox()">+ Add Book</button>
+    <div class="container">
+        
+        <div class="addedbooks">
+            
+            <!-- <div class="books">
+                <p>myBook</p>
+                <p>Mr. Man</p>
+                <button class="yes">Read</button>
+                <button id="remove">Remove</button>
+            </div>
+            <div class="books">
+                <p>myBook</p>
+                <p>Mr. Man</p>
+                <button class="yes">Read</button>
+            </div> -->
+
+        </div>
+
+        <dialog class="addbook" id="modal">
+            <input type="text" id="title" placeholder="title" required>
+            <input type="text" id="author" placeholder="author" required>
+            <span>Have you read it?<input type="checkbox" name="" id="checker"></span>
+            <button id="add" class="closemodal" onclick="add()">Add Book</button>
+        </dialog>
+
+        
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
